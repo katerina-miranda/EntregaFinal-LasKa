@@ -1,7 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget";
 import Secciones from "./Secciones/Secciones";
 import Categorias from "./Categorias/Categorias";
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 const Navbar = () => {
   return (
@@ -16,9 +15,8 @@ const Navbar = () => {
             <Categorias/>
           </ul>
         </div>
-        <CartWidget cantCarrito={9}/>
+        <CartWidget cantCarrito={30}/>
       </div>
-      <ItemListContainer/>
     </nav>
   );
 }

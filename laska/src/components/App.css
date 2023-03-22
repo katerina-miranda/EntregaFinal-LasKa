@@ -1,9 +1,25 @@
-.divColor {
-  color: black;
-  font-weight: 500;
-  font-size: 1rem;
+.cardProducto {
+  width: 18rem;
+  margin: 4px;
+  background-color: rgba(167, 167, 167, 0.342);
 }
 
-.clase {
-  background-color: none;
+.cardBody {
+  background-color: white;
+  margin-bottom: 3px;
+  text-align: center;
+}
+img {
+  margin-top: 3px;
+}
+
+.cardProductos {
+  margin: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemDetail {
+  max-width: 540px;
+  margin-top: 20px;
 }

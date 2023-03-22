@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "anillo",
+        "marca": "Icon",
+        "modelo": "Fino",
+        "precio": 36000,
+        "stock": 25,
+        "img": "anillo-fino-icon.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 2,
+        "nombre": "collar",
+        "marca": "De Flor",
+        "modelo": "Con Diamantes y Perlas",
+        "precio": 34000,
+        "stock": 30,
+        "img": "collar-de-flor-con-diamantes-y-perlas.jpg"
+    },
+    {
+        "id": 3,
+        "idCategoria": 3,
+        "nombre": "pendientes",
+        "marca": "Icon",
+        "modelo": "Asimétricos",
+        "precio": 54000,
+        "stock": 19,
+        "img": "pendientes-asimetricos-icon.jpg"
+    },
+    {
+        "id": 4,
+        "idCategoria": 4,
+        "nombre": "pulsera",
+        "marca": "Flora",
+        "modelo": "De Oro Blanco con Diamantes",
+        "precio": 65000,
+        "stock": 10,
+        "img": "pulsera-flora-oro-blanco-con-diamante.jpg"
+    },
+    {
+        "id": 5,
+        "idCategoria": 1,
+        "nombre": "anillo",
+        "marca": "Icon",
+        "modelo": "Con Corazones y Diamantes",
+        "precio": 35500,
+        "stock": 20,
+        "img": "anillo-icon-corazones-y-diamantes.jpg"
+    },
+    {
+        "id": 6,
+        "idCategoria": 2,
+        "nombre": "collar",
+        "marca": "Link To Love",
+        "modelo": "Con Diamantes",
+        "precio": 40000,
+        "stock": 20,
+        "img": "collar-link-to-love-con-diamantes.jpg"
+    },
+    {
+        "id": 7,
+        "idCategoria": 3,
+        "nombre": "pendientes",
+        "marca": "De Flor",
+        "modelo": "Con Diamantes",
+        "precio": 45000,
+        "stock": 15,
+        "img": "pendientes-de-flor-con-diamantes.jpg"
+    },
+    {
+        "id": 8,
+        "idCategoria": 4,
+        "nombre": "pulsera",
+        "marca": "Link To Love",
+        "modelo": "Con Diamantes",
+        "precio": 63900,
+        "stock": 25,
+        "img": "pulsera-link-to-love-con-diamantes.jpg"
+    },
+    {
+        "id": 9,
+        "idCategoria": 1,
+        "nombre": "anillo",
+        "marca": "Icon",
+        "modelo": "de Oro Blanco con Estrellas",
+        "precio": 47300,
+        "stock": 15,
+        "img": "anillo-icon-oro-blanco-con-estrellas.jpg"
+    },
+    {
+        "id": 10,
+        "idCategoria": 2,
+        "nombre": "collar",
+        "marca": "Link To Love",
+        "modelo": "Lazo",
+        "precio": 44000,
+        "stock": 21,
+        "img": "collar-lazo-link-to-love.jpg"
+    },
+    {
+        "id": 11,
+        "idCategoria": 3,
+        "nombre": "pendientes",
+        "marca": "Running",
+        "modelo": "Con Diamantes",
+        "precio": 43800,
+        "stock": 30,
+        "img": "pendientes-running-diamantes.jpg"
+    },
+    {
+        "id": 12,
+        "idCategoria": 4,
+        "nombre": "pulsera",
+        "marca": "Running",
+        "modelo": "Con Diamantes",
+        "precio": 67300,
+        "stock": 20,
+        "img": "pulsera-running-con-diamantes.jpg"
+    }
+]
