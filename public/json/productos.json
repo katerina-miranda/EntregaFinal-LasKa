@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "idCategoria": 1,
+        "idCategoria": "anillos",
         "nombre": "anillo",
         "marca": "Icon",
         "modelo": "Fino",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "idCategoria": 2,
+        "idCategoria": "collares",
         "nombre": "collar",
         "marca": "De Flor",
         "modelo": "Con Diamantes y Perlas",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "idCategoria": 3,
+        "idCategoria": "pendientes",
         "nombre": "pendientes",
         "marca": "Icon",
         "modelo": "Asimétricos",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "idCategoria": 4,
+        "idCategoria": "pulseras",
         "nombre": "pulsera",
         "marca": "Flora",
         "modelo": "De Oro Blanco con Diamantes",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "idCategoria": 1,
+        "idCategoria": "anillos",
         "nombre": "anillo",
         "marca": "Icon",
         "modelo": "Con Corazones y Diamantes",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "idCategoria": 2,
+        "idCategoria": "collares",
         "nombre": "collar",
         "marca": "Link To Love",
         "modelo": "Con Diamantes",
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "idCategoria": 3,
+        "idCategoria": "pendientes",
         "nombre": "pendientes",
         "marca": "De Flor",
         "modelo": "Con Diamantes",
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "idCategoria": 4,
+        "idCategoria": "pulseras",
         "nombre": "pulsera",
         "marca": "Link To Love",
         "modelo": "Con Diamantes",
@@ -81,7 +81,7 @@
     },
     {
         "id": 9,
-        "idCategoria": 1,
+        "idCategoria": "anillos",
         "nombre": "anillo",
         "marca": "Icon",
         "modelo": "de Oro Blanco con Estrellas",
@@ -91,7 +91,7 @@
     },
     {
         "id": 10,
-        "idCategoria": 2,
+        "idCategoria": "collares",
         "nombre": "collar",
         "marca": "Link To Love",
         "modelo": "Lazo",
@@ -101,7 +101,7 @@
     },
     {
         "id": 11,
-        "idCategoria": 3,
+        "idCategoria": "pendientes",
         "nombre": "pendientes",
         "marca": "Running",
         "modelo": "Con Diamantes",
@@ -111,7 +111,7 @@
     },
     {
         "id": 12,
-        "idCategoria": 4,
+        "idCategoria": "pulseras",
         "nombre": "pulsera",
         "marca": "Running",
         "modelo": "Con Diamantes",

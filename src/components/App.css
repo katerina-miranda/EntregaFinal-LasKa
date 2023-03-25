@@ -9,6 +9,13 @@
   margin-bottom: 3px;
   text-align: center;
 }
+
+.cardBodyDark {
+  background-color: hsl(0, 0, 33%);
+  margin-bottom: 3px;
+  text-align: center;
+}
+
 img {
   margin-top: 3px;
 }
@@ -22,4 +29,13 @@ img {
 .itemDetail {
   max-width: 540px;
   margin-top: 20px;
+}
+
+.itemDetailBodyDark {
+
+}
+
+.darkMode {
+  background-color: black;
+  color: gainsboro;
 }
