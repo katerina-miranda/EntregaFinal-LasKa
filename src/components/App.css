@@ -23,6 +23,12 @@
   border-radius: 10px;
 }
 
+.cardCartBody {
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
 img {
   margin-top: 10px;
 }
@@ -53,4 +59,22 @@ img {
 
 .boton {
   border-radius: 10px;
+}
+
+.cartContainer {
+  margin-top: 3%;
+  margin-left: 26,5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divButtons button {
+  margin: 4px;
+}
+
+.cardCart {
+  max-width: 680px;
+  padding-left: 13px;
+  padding-bottom: 13px;
 }

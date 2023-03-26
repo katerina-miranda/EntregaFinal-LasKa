@@ -13,7 +13,6 @@ export const DarkModeProvider = (props) => { //defino mi proveedor
       document.body.firstElementChild.classList.remove('darkMode')
     }
   }
-  console.log(darkMode)
   return (
     <DarkModeContext.Provider value={{darkMode, toggleDarkMode}}>
       {props.children}
