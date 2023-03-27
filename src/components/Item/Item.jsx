@@ -12,7 +12,7 @@ export const Item = ({item}) => {
         <h5 className="card-title">{item.nombre} {item.modelo}</h5>
         <p className="card-text">{item.marca}</p>
         <p className="card-text">${new Intl.NumberFormat('de-DE').format(item.precio)}</p>
-        <button className="boton btn btn-dark"><Link className="nav-link" to={`/accesorio/${item.nombre}`}>Ver Producto</Link></button>
+        <button className="boton btn btn-dark"><Link className="nav-link" to={`/accesorio/${item.id}`}>Ver Producto</Link></button>
       </div>
     </div>
   );

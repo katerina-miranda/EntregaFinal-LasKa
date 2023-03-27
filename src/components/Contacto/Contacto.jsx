@@ -21,21 +21,21 @@ export const Contacto = () => {
       <form onSubmit={consultarFormulario} ref={datosFormulario}>
         <div className="mb-3">
           <label htmlFor="nombre" className="form-label">Ingresá tu nombre</label>
-          <input type="text" className="form-control" name="nombre"/>
+          <input type="text" className="form-control boton" name="nombre"/>
         </div>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Ingresá tu email</label>
-          <input type="email" className="form-control" name="email"/>
+          <input type="email" className="form-control boton" name="email"/>
         </div>
         <div className="mb-3">
           <label htmlFor="celular" className="form-label">Ingresá tu teléfono</label>
-          <input type="number" className="form-control" name="celular"/>
+          <input type="number" className="form-control boton" name="celular"/>
         </div>
         <div className="mb-3">
           <label htmlFor="consulta" className="form-label">Escribí un comentario</label>
-          <textarea className="form-control" name="consulta" rows={3} defaultValue={""}/>
+          <textarea className="form-control boton" name="consulta" rows={3} defaultValue={""}/>
         </div>
-        <button type="submit" className="btn btn-primary">Enviar</button>
+        <button type="submit" className="btn btn-primary boton">Enviar</button>
       </form>
     </div>
   );

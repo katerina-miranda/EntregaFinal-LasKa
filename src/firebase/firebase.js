@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, doc, addDoc, getDoc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAGT39Qc7v_TtaJ7OBaJgq9M83zggWwnJo",
@@ -11,6 +11,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+console.log(app)
 const db = getFirestore() //consultar la BDD
 
 /* 
@@ -22,7 +23,7 @@ const db = getFirestore() //consultar la BDD
     DELETE
 */
 
-export const cargarBDD = async () => {
+export const cargarBDD = async() => {
   const promise = await fetch('./json/productos.json')
   const productos = await promise.json()
   productos.forEach(async (prod) => {
@@ -36,4 +37,26 @@ export const cargarBDD = async () => {
       img: prod.img
     })
   });
+}
+
+export const getProductos = async() => {
+  const productos = await getDocs(collection(db, 'productos'))
+  const items = productos.docs.map(prod => {
+    return {...prod.data(), id: prod.id}
+  })
+  return items
+}
+
+export const getProducto = async(id) => {
+  const producto = await getDoc(doc(db, 'productos', id))
+  const item = {...producto.data(), id: producto.id}
+  return item
+}
+
+export const updateProducto = async(id, info) => {
+  await updateDoc(doc(db, 'productos', id), info)
+}
+
+export const deleteProducto = async(id) => {
+  await deleteDoc(doc(db, 'productos', id))
 }
