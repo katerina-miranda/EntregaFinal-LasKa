@@ -19,6 +19,7 @@ import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
 import { Contacto } from './Contacto/Contacto';
 import { Cart } from './Cart/Cart';
+import { Checkout } from './Checkout/Checkout';
 
 //context
 import { DarkModeProvider } from '../context/DarkModeContext';
@@ -49,6 +50,7 @@ const App = () => {
             <Route path='/accesorios/:idCategoria' element={<ItemListContainer/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
           <ToastContainer/>
         </DarkModeProvider>

@@ -14,7 +14,7 @@ export const Cart = () => {
       {carrito.length === 0 
         ? //Si carrito esta vacio
           <>
-            <h2>Carrito vacio</h2>
+            <h2>No tenés accesorios en el carrito</h2>
             <Link className="nav-link" to={'/'}><button className="btn btn-dark boton">Continuar comprando</button></Link> 
           </>
         : //Si carrito tiene productos
