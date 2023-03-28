@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import { useCartContext } from '../../context/CartContext';
 
 //firebase
-import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from '../../firebase/firebase';
+import { createOrdenCompra, getProducto, updateProducto } from '../../firebase/firebase';
 
 export const Checkout = () => {
   const {carrito, emptyCart, totalPrice} = useCartContext()
