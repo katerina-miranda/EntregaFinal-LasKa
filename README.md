@@ -29,34 +29,34 @@ Consiste en un ecommerce implementado con React.js junto a React Router, React H
 
 _Dinámica de funcionamiento del sitio:_
 
-![Sample Gif](./src/components/Assets/LASKA-Brave-2023-03-29-17-50-16.gif)
+![Sample Gif](./src/components/Assets/LASKA-2023.gif)
 
 #
 
 ## **Capturas:**
 
 ### 1. Inicio:
-## ![](https://res.cloudinary.com/carlo1112/image/upload/v1639679459/sonidocodeado-paginaejemplo/01_lzkgwr.png)
+## ![](./src/components/Assets/laska-inicio.png)
 
 ### 2. Detalle del producto:
 
-## ![](https://res.cloudinary.com/carlo1112/image/upload/v1639679459/sonidocodeado-paginaejemplo/02_ebdyy1.png)
+## ![](./src/components/Assets/laska-detalle.png)
 
 ### 3. Cantidad de accesorios en el carrito de compras:
 
-## ![](https://res.cloudinary.com/carlo1112/image/upload/v1639679473/sonidocodeado-paginaejemplo/03_tvkf1c.png)
+## ![](./src/components/Assets/laska-contador.png)
 
 ### 4. Carrito de compras, con productos seleccionados:
 
-## ![](https://res.cloudinary.com/carlo1112/image/upload/v1639679473/sonidocodeado-paginaejemplo/03_tvkf1c.png)
+## ![](./src/components/Assets/laska-carrito.png)
 
 ### 5. Validar formulario:
 
-## ![](https://res.cloudinary.com/carlo1112/image/upload/v1639679473/sonidocodeado-paginaejemplo/03_tvkf1c.png)
+## ![](./src/components/Assets/laska-formulario.png)
 
 ### 6. Carrito de compras vacío:
 
-## ![](https://res.cloudinary.com/carlo1112/image/upload/v1639679449/sonidocodeado-paginaejemplo/06_nsrxoe.png)
+## ![](/src/components/Assets/laska-vacio.png)
 
 # *Descripción de funcionamiento del sitio*
 
