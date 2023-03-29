@@ -58,6 +58,13 @@ img {
   border-radius: 10px;
 }
 
+.cantCarrito {
+  background-color: red;
+  color: white;
+  padding: inherit;
+  margin: -17px;
+}
+
 .darkMode {
   background-color: hsl(0, 0%, 3%);
   color: gainsboro;
