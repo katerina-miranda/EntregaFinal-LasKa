@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, addDoc, getDoc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAGT39Qc7v_TtaJ7OBaJgq9M83zggWwnJo",
+  apiKey: process.env.API_KEY,
   authDomain: "react-laska-2023.firebaseapp.com",
   projectId: "react-laska-2023",
   storageBucket: "react-laska-2023.appspot.com",
