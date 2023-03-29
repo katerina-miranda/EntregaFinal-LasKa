@@ -29,7 +29,7 @@ Consiste en un ecommerce implementado con React.js junto a React Router, React H
 
 _Dinámica de funcionamiento del sitio:_
 
-![Sample Gif](.src/components/Assets/LASKA-Brave-2023-03-29-17-50-16.gif)
+![Sample Gif](./src/components/Assets/LASKA-Brave-2023-03-29-17-50-16.gif)
 
 #
 
