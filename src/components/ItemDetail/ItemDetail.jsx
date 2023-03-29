@@ -1,4 +1,5 @@
 import { ItemCount } from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 //context
 import { useDarkModeContext } from '../../context/DarkModeContext';
@@ -22,7 +23,7 @@ export const ItemDetail = ({item}) => {
           <p className='card-text'>Precio: ${new Intl.NumberFormat('de-DE').format(item.precio)}</p>
           <p className='card-text'>Stock: {item.stock}</p>
           <ItemCount valInicial={1} stock={item.stock} onAdd={onAdd}/>
-          <button className='btn btn-secondary'>Finalizar Compra</button>
+          <Link className='nav-link' to={'/cart'}><button className='btn btn-secondary'>Finalizar Compra</button></Link>
         </div>
       </div>
     </div>

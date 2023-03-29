@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 //toastify
 import { toast } from 'react-toastify';
@@ -40,7 +39,6 @@ export const Checkout = () => {
         ?
         <>
           <h2>Tu carrito está vacio</h2>
-          <Link className="nav-link" to={'/'}><button className="btn btn-dark boton">Continuar comprando</button></Link>
         </>
         :
         <div className="container" style={{marginTop: "20px"}}>
