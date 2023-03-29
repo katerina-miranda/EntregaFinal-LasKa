@@ -17,8 +17,8 @@ import { ToastContainer } from 'react-toastify';
 import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
-import { Contacto } from './Contacto/Contacto';
 import { Cart } from './Cart/Cart';
+import { Contacto } from './Contacto/Contacto'
 import { Checkout } from './Checkout/Checkout';
 
 //context
@@ -48,8 +48,8 @@ const App = () => {
             <Route path='/' element={<ItemListContainer/>}/>
             <Route path='/accesorio/:id' element={<ItemDetailContainer/>}/>
             <Route path='/accesorios/:idCategoria' element={<ItemListContainer/>}/>
-            <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
           <ToastContainer/>

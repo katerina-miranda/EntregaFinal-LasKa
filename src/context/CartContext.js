@@ -53,8 +53,6 @@ export const CartProvider = (props) => {
   const emptyCart = () => {
     setCarrito([])
   }
-  
-  console.log(carrito)
   return (
     <CartContext.Provider value={{carrito, addItem, getItemQuantity, removeItem, totalPrice, emptyCart}}>
       {props.children}
