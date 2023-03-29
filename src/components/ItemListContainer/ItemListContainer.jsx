@@ -7,7 +7,11 @@ import { getProductos } from '../../firebase/firebase';
 //componentes
 import { ItemList } from '../ItemList/ItemList';
 
+//context
+import { useDarkModeContext } from '../../context/DarkModeContext'
+
 export const ItemListContainer = () => {
+  const {darkMode} = useDarkModeContext()
   const [productos, setProductos] = useState([])
   const {idCategoria} = useParams()
 
@@ -32,7 +36,7 @@ export const ItemListContainer = () => {
   //[prop] cuando se renderiza y cuando se actualiza
   return (
     <div className='row cardProductos' style={{marginTop: "20px"}} >
-      <h1 className="h1">Accesorios Laska</h1>
+      <h1 className={`h1 ${darkMode ? 'blanco' : ''}`}>Accesorios Laska</h1>
       {productos}
     </div>
   );

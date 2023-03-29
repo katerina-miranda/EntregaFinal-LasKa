@@ -1,10 +1,17 @@
+import '../App.css'
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+
+//toastify
 import { toast } from "react-toastify";
+
+//context
+import { useDarkModeContext } from "../../context/DarkModeContext";
 
 export const Contacto = () => {
   let navigate = useNavigate()
+  const {darkMode} = useDarkModeContext()
   const {register, formState: { errors }, handleSubmit} = useForm()
   const onSubmit = (data) => {
     console.log(data)
@@ -13,7 +20,7 @@ export const Contacto = () => {
   }
   return (
     <div className="container" style={{marginTop: "20px"}}>
-      <h1>Contactanos</h1>
+      <h1 className={`h1 ${darkMode ? 'blanco' : ''}`}>Contactanos</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
           <label htmlFor="nombre" className="form-label">Ingresá tu nombre</label>
@@ -47,7 +54,7 @@ export const Contacto = () => {
           {errors.mensaje?.type === 'required' && <p className="rojo">Se requiere completar este campo</p>}
           {errors.mensaje?.type === 'maxLength' && <p className="rojo">El campo debe tener menos de 100 carácteres</p>}
         </div>
-        <button type="submit" className="btn btn-primary boton">Enviar</button>
+        <button type="submit" className="btn btn-primary boton bottom">Enviar</button>
       </form>
     </div>
   );

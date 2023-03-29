@@ -15,7 +15,7 @@ export const Footer = React.memo(() => {
           <li><i className="fab fa-github"/><BsGithub size='2.5rem' color='white'/>GitHub</li>
           <li><i className="fab fa-linkedin"/><BsLinkedin size='2.5rem' color='white'/>Linkedin</li>
         </ul>
-        <p>© K-SHOES 2022. TODOS LOS DERECHOS RESERVADOS.</p>
+        <p className='footerRedes'>© LASKA 2023. TODOS LOS DERECHOS RESERVADOS.</p>
       </div>
     </div>
   );

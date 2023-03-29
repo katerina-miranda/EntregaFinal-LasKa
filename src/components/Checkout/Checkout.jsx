@@ -1,3 +1,4 @@
+import '../App.css'
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
@@ -7,12 +8,14 @@ import { toast } from 'react-toastify';
 
 //contexto
 import { useCartContext } from '../../context/CartContext';
+import { useDarkModeContext } from '../../context/DarkModeContext';
 
 //firebase
 import { createOrdenCompra, getProducto, updateProducto } from '../../firebase/firebase';
 
 export const Checkout = () => {
   let navigate = useNavigate()
+  const {darkMode} = useDarkModeContext()
   const {carrito, emptyCart, totalPrice} = useCartContext()
   const {register, formState: { errors }, handleSubmit} = useForm()
   const datosFormulario = React.useRef()
@@ -41,11 +44,11 @@ export const Checkout = () => {
       {carrito.length === 0
         ?
         <>
-          <h2>Tu carrito está vacio</h2>
+          <h2 className={`h1 centrar ${darkMode ? 'blanco' : ''}`}>Tu carrito está vacio</h2>
         </>
         :
         <div className="container" style={{marginTop: "20px"}}>
-          <h1 className='h1'>Verificación de compra</h1>
+          <h1 className={`h1 ${darkMode ? 'blanco' : ''}`}>Verificación de compra</h1>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-3">
               <label htmlFor="nombre" className="form-label">Ingresá tu nombre</label>
@@ -81,7 +84,7 @@ export const Checkout = () => {
               })}/>
               {errors.direccion?.type === 'required' && <p className="rojo">Se requiere completar este campo</p>}
             </div>
-            <button type="submit" className="btn btn-primary boton">Finalizar Compra</button>
+            <button type="submit" className="btn btn-primary boton bottom">Finalizar Compra</button>
           </form>
         </div>
       }

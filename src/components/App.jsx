@@ -11,7 +11,7 @@ import { ToastContainer } from 'react-toastify';
 //import { cargarBDD } from '../firebase/firebase'
 //import { getProductos } from '../firebase/firebase'
 //import { getProducto } from '../firebase/firebase';
-//import { updateProducto, deleteProducto } from '../firebase/firebase';
+import { updateProducto } from '../firebase/firebase';
 
 //componentes
 import Navbar from "./Navbar/Navbar";
@@ -30,15 +30,15 @@ const App = () => {
   //cargarBDD()
   //getProductos()
   //getProducto("bSsgOvHRz1riOpJKN1Cv")
-  /*updateProducto("bSsgOvHRz1riOpJKN1Cv", {
-    "idCategoria": 4,
-    "nombre": "pulsera",
+  updateProducto("3ebHODfpi5WwIV8vzKwR", {
+    "idCategoria": 2,
+    "nombre": "collar",
     "marca": "Link To Love",
-    "modelo": "Con Diamantes",
-    "precio": 85900,
+    "modelo": "Lazo",
+    "precio": 80600,
     "stock": 30,
-    "img": "https://firebasestorage.googleapis.com/v0/b/react-laska-2023.appspot.com/o/pulsera-link-to-love-con-diamantes.jpg?alt=media&token=2f584824-4dff-432d-9971-883556c7ed6a"
-  })*/
+    "img": "https://firebasestorage.googleapis.com/v0/b/react-laska-2023.appspot.com/o/collar-link-to-love-con-diamantes.jpg?alt=media&token=333bbc12-4ea6-497c-92f8-405293ffd081"
+  })
   //deleteProducto("bSsgOvHRz1riOpJKN1Cv")
   return (
     <BrowserRouter>
