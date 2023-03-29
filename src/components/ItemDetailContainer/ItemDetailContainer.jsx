@@ -16,7 +16,8 @@ export const ItemDetailContainer = () => {
   }, [id])
   return (
     <div className="card mb-3 container itemDetail">
-      <ItemDetail item={producto}/>
+      <h1 className="h1">Detalle</h1>
+        <ItemDetail item={producto}/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 //toastify
 import { toast } from 'react-toastify';
@@ -11,11 +12,13 @@ import { useCartContext } from '../../context/CartContext';
 import { createOrdenCompra, getProducto, updateProducto } from '../../firebase/firebase';
 
 export const Checkout = () => {
-  const {carrito, emptyCart, totalPrice} = useCartContext()
-  const datosFormulario = React.useRef()
   let navigate = useNavigate()
+  const {carrito, emptyCart, totalPrice} = useCartContext()
+  const {register, formState: { errors }, handleSubmit} = useForm()
+  const datosFormulario = React.useRef()
 
-  const consultarFormulario = (e) => {
+  const onSubmit = (data, e) => {
+    console.log(data)
     e.preventDefault()
     const datForm = new FormData(datosFormulario.current)
     const cliente = Object.fromEntries(datForm)
@@ -42,14 +45,23 @@ export const Checkout = () => {
         </>
         :
         <div className="container" style={{marginTop: "20px"}}>
-          <form onSubmit={consultarFormulario} ref={datosFormulario}>
+          <h1 className='h1'>Verificación de compra</h1>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-3">
               <label htmlFor="nombre" className="form-label">Ingresá tu nombre</label>
-              <input type="text" className="form-control boton" name="nombre"/>
+              <input type="text" className="form-control boton" {...register('nombre', {
+                required: true
+              })}/>
+              {errors.nombre?.type === 'required' && <p className="rojo">Se requiere completar este campo</p>}
             </div>
             <div className="mb-3">
               <label htmlFor="email" className="form-label">Ingresá tu email</label>
-              <input type="email" className="form-control boton" name="email"/>
+              <input type="email" className="form-control boton" {...register('email', {
+                required: true,
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
+              })}/>
+              {errors.email?.type === 'required' && <p className="rojo">Se requiere completar este campo</p>}
+              {errors.email?.type === 'pattern' && <p className="rojo">El formato del email es incorrecto</p>}
             </div>
             <div className="mb-3">
               <label htmlFor="repEmail" className="form-label">Repetí tu email</label>
@@ -57,11 +69,17 @@ export const Checkout = () => {
             </div>
             <div className="mb-3">
               <label htmlFor="celular" className="form-label">Ingresá tu teléfono</label>
-              <input type="number" className="form-control boton" name="celular"/>
+              <input type="number" className="form-control boton" {...register('celular', {
+                required: true
+              })}/>
+              {errors.celular?.type === 'required' && <p className="rojo">Se requiere completar este campo</p>}
             </div>
             <div className="mb-3">
               <label htmlFor="direccion" className="form-label">Ingresá tu dirección</label>
-              <input type="texto" className="form-control boton" name="direccion"/>
+              <input type="texto" className="form-control boton" {...register('direccion', {
+                required: true
+              })}/>
+              {errors.direccion?.type === 'required' && <p className="rojo">Se requiere completar este campo</p>}
             </div>
             <button type="submit" className="btn btn-primary boton">Finalizar Compra</button>
           </form>

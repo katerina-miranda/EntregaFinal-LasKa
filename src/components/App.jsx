@@ -18,8 +18,9 @@ import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
 import { Cart } from './Cart/Cart';
-import { Contacto } from './Contacto/Contacto'
+import { Contacto } from './Contacto/Contacto';
 import { Checkout } from './Checkout/Checkout';
+import { Footer } from './Footer/Footer';
 
 //context
 import { DarkModeProvider } from '../context/DarkModeContext';
@@ -52,6 +53,7 @@ const App = () => {
             <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
+          <Footer/>
           <ToastContainer/>
         </DarkModeProvider>
       </CartProvider>

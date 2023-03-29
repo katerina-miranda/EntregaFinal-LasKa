@@ -2,6 +2,12 @@
   background-color: rgb(40, 40, 40);
 }
 
+h1 {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
 .cardProducto {
   width: 18rem;
   margin: 10px;
@@ -62,11 +68,10 @@ img {
 }
 
 .cartContainer {
-  margin-top: 3%;
   margin-left: 26,5%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .divButtons button {
@@ -77,4 +82,12 @@ img {
   max-width: 680px;
   padding-left: 13px;
   padding-bottom: 13px;
+}
+
+.footerRedes {
+  list-style: none;
+}
+
+.rojo {
+  color: red;
 }

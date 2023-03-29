@@ -19,6 +19,7 @@ export const Cart = () => {
           </>
         : //Si carrito tiene productos
           <div className="container cartContainer">
+            <h1 className='h1 img'>Carrito de compras</h1>
             {<ItemList products={carrito} plantilla={'itemCart'}/>}
             <div className="divButtons">
               <p>Resumen de la compra: ${new Intl.NumberFormat('de-DE').format(totalPrice())}</p>

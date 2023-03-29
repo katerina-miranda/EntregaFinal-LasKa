@@ -31,7 +31,8 @@ export const ItemListContainer = () => {
   //[] cuando se renderiza
   //[prop] cuando se renderiza y cuando se actualiza
   return (
-    <div className='row cardProductos'>
+    <div className='row cardProductos' style={{marginTop: "20px"}} >
+      <h1 className="h1">Accesorios Laska</h1>
       {productos}
     </div>
   );
