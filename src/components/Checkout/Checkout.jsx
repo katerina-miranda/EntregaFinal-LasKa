@@ -67,10 +67,6 @@ export const Checkout = () => {
               {errors.email?.type === 'pattern' && <p className="rojo">El formato del email es incorrecto</p>}
             </div>
             <div className="mb-3">
-              <label htmlFor="repEmail" className="form-label">Repetí tu email</label>
-              <input type="email" className="form-control boton" name="repEmail"/>
-            </div>
-            <div className="mb-3">
               <label htmlFor="celular" className="form-label">Ingresá tu teléfono</label>
               <input type="number" className="form-control boton" {...register('celular', {
                 required: true
