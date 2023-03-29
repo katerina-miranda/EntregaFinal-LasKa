@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 
-//context
-import { useDarkModeContext } from "../../context/DarkModeContext";
-
 //firebase
 import { getProducto } from "../../firebase/firebase";
+
+//context
+import { useDarkModeContext } from '../../context/DarkModeContext';
 
 export const ItemDetailContainer = () => {
   const {darkMode} = useDarkModeContext()
@@ -20,9 +20,11 @@ export const ItemDetailContainer = () => {
     })
   }, [id])
   return (
-    <div className="card mb-3 container itemDetail">
-      <h1 className={`h1 color-black${darkMode ? 'negro' : ''}`}>Detalle</h1>
+    <>
+      <h1 className={`h1 ${darkMode ? 'blanco' : ''}`}>Detalle</h1>
+      <div className="card mb-5 container itemDetail">
         <ItemDetail item={producto}/>
-    </div>
+      </div>
+    </>
   );
 }

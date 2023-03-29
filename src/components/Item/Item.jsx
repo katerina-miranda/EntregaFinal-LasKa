@@ -1,3 +1,4 @@
+import '../App.css';
 import { Link } from "react-router-dom";
 
 //context
@@ -6,7 +7,7 @@ import { useDarkModeContext } from "../../context/DarkModeContext";
 export const Item = ({item}) => {
   const {darkMode} = useDarkModeContext()
   return (                                                      //CLASES DE BOOSTRAP
-    <div className={`card mb-3 cardProducto ${darkMode ? 'text-white bg-secondary' : 'border-light'}`}>
+    <div className={`card cardProducto ${darkMode ? 'text-white bg-secondary' : 'border-light'}`}>
       <img src={item.img} className="card-img-top" alt={`Imagen de ${item.nombre}`}/>
       <div className={`card-body ${darkMode ? 'cardBodyDark' : 'cardBody'}`}>
         <h5 className="card-title">{item.nombre} {item.modelo}</h5>
